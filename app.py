@@ -6,12 +6,12 @@ from dash.dependencies import Input, Output, State
 
 ########### Define your variables ######
 
-myheading1='How to use callbacks'
-tabtitle = 'xkcd'
-list_of_options=['box plot', 'correlation', 'git commit', 'scatterplot']
-list_of_images=['outlier.png', 'correlation.png', 'gitcommit.jpg', 'scatterplot.png', 'good_code.png']
-sourceurl = 'https://xkcd.com/'
-githublink = 'https://github.com/austinlasseter/dash-callbacks-radio'
+myheading1='Meme Picker'
+tabtitle = 'memes'
+list_of_options=['Pineapple Pizza', 'Project Management', 'PC Maintenance', 'How-To']
+list_of_images=['pizza.png', 'projects.png', 'clean.jpeg', 'explain.jpg']
+sourceurl = 'https://imgflip.com/memegenerator/Expanding-Brain/'
+githublink = 'https://github.com/aidanjdm/dash-callbacks-radio'
 
 
 ########## Set up the chart
@@ -34,7 +34,7 @@ app.layout = html.Div(children=[
                 {'label':list_of_options[2], 'value':list_of_images[2]},
                 {'label':list_of_options[3], 'value':list_of_images[3]},
                 ],
-        value=list_of_images[4],
+        value=list_of_images[0],
         ),
     html.Div(id='your_output_here', children=''),
     html.Br(),
